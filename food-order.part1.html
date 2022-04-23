@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // iN: our app ask the user for the desired quontity
+      // FACt: we know the price for each item
+      // OUT: total cost
+
+      // data
+      foodName = "Salad"; //string
+      foodPriceValue = 15.0; // Number
+      foodPriceUnits = " MDL"; //string
+      foodDeliveryTax = 5.0; //number
+
+      //alert("We have" + foodName);//
+      clientQuantity = prompt("MENU\n\n " + foodName + "\n\nHow many? ");
+
+      //HW: apply a dlivery tax
+      totalCost = foodPriceValue * clientQuantity + foodDeliveryTax;
+
+      //alert(" bill " + totalCost + foodPriceUnits);//
+      alert(
+        " you've ordered " +
+          clientQuantity +
+          " bill " +
+          totalCost +
+          foodPriceUnits
+      );
+    </script>
+  </body>
+</html>
