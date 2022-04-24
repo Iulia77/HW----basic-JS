@@ -1,0 +1,43 @@
+<!--
+    
+    aka media query
+    
+    ----->
+
+<script>
+  //In data
+  const BREAK_POINT = 60;
+  const BREAK_POINT_SMALL = 560;
+  const BREAK_POINT_MEDIUM = 980;
+  const BREAK_POINT_LARGE = 1200;
+  const BREAK_POINT_ERROR = 3000;
+
+  //-------------x--------------------->window size
+  //   mobile  1100     desktop
+
+  //HW: add breakpoints:
+  //         560             980                1200
+  //---------x-----------------x-------------------x---------->windows size
+  // extra small     small            medium           large
+
+  // + size < 60 --error
+  // +size >3000 -- error
+
+  let windowWidth = innerWidth; //innerHeigt
+
+  // DECISION / adaptive
+
+  if (windowWidth <= BREAK_POINT) {
+    alert("Error" + innerWidth);
+  } else if (windowWidth <= BREAK_POINT_SMALL) {
+    alert("Desktop" + innerWidth + "EXTRA SMALL");
+  } else if (windowWidth <= BREAK_POINT_MEDIUM) {
+    alert("Desktop" + innerWidth + "SMALL");
+  } else if (windowWidth <= BREAK_POINT_LARGE) {
+    alert("Desktop" + innerWidth + "MEDIUM");
+  } else if (windowWidth <= BREAK_POINT_ERROR)
+    alert("Desktop" + innerWidth + "LARGE");
+  else {
+    alert("Error" + innerWidth);
+  }
+</script>
