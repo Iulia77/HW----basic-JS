@@ -1,0 +1,69 @@
+<script>
+  //switch -> branching
+
+  //choose the day
+  let Calendar_1 = 1;
+  let Calendar_2 = 7;
+  let Calendar = prompt("Choose a calendar?");
+
+  let day = parseInt(prompt("Day of the week?")); // 1...7
+
+  //HW: using if/else +promt()
+  //  -what calendar  ?
+
+  if (Calendar_1 >= 1) {
+    console.log("Calendar 1");
+  } else if (Calendar_2 <= 7) {
+    console.log("Calendar 2");
+  } else {
+    console.log("Choose a calendar?");
+  }
+  switch (day) {
+    case 1:
+      document.write("Mo"); // "1" ===1
+      break;
+    case 2:
+      document.write("Tu");
+      break;
+    case 3:
+      document.write("We");
+      break;
+    case 4:
+      document.write("Th");
+      break;
+    case 5:
+      let times = 3;
+      while (times > 0) {
+        document.write("Yeeeey!!! :)");
+        times--;
+      }
+      document.write("Fr");
+      break;
+    case 6:
+      document.write("Sa");
+      break;
+    case 7:
+      document.write("Su");
+      break;
+    default:
+      document.write("Are you drunk?");
+      break;
+  }
+
+  //switch (day) {   // ===identic
+  //  case value_1:
+  //    code_1;
+  //    break;
+  //  case value_2:
+  //    code_2;
+  //    break;
+  //...
+  //   case value_N:
+  //     code_N;
+  //     break;
+
+  //   default:
+  //     code_default;
+  //     break;
+  // }
+</script>
