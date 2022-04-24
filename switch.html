@@ -3,7 +3,7 @@
 
   //choose the day
   let Calendar_1 = 1;
-  let Calendar_2 = 7;
+  let Calendar_2 = 2;
   let Calendar = prompt("Choose a calendar?");
 
   let day = parseInt(prompt("Day of the week?")); // 1...7
@@ -11,43 +11,70 @@
   //HW: using if/else +promt()
   //  -what calendar  ?
 
-  if (Calendar_1 >= 1) {
-    console.log("Calendar 1");
-  } else if (Calendar_2 <= 7) {
-    console.log("Calendar 2");
+  if (Calendar <= 1) {
+    switch (day) {
+      case 1:
+        document.write("Mo"); // "1" ===1
+        break;
+      case 2:
+        document.write("Tu");
+        break;
+      case 3:
+        document.write("We");
+        break;
+      case 4:
+        document.write("Th");
+        break;
+      case 5:
+        let times = 3;
+        while (times > 0) {
+          document.write("Yeeeey!!! :)");
+          times--;
+        }
+        document.write("Fr");
+        break;
+      case 6:
+        document.write("Sa");
+        break;
+      case 7:
+        document.write("Su");
+        break;
+      default:
+        document.write("Are you drunk?");
+        break;
+    }
   } else {
-    console.log("Choose a calendar?");
-  }
-  switch (day) {
-    case 1:
-      document.write("Mo"); // "1" ===1
-      break;
-    case 2:
-      document.write("Tu");
-      break;
-    case 3:
-      document.write("We");
-      break;
-    case 4:
-      document.write("Th");
-      break;
-    case 5:
-      let times = 3;
-      while (times > 0) {
-        document.write("Yeeeey!!! :)");
-        times--;
-      }
-      document.write("Fr");
-      break;
-    case 6:
-      document.write("Sa");
-      break;
-    case 7:
-      document.write("Su");
-      break;
-    default:
-      document.write("Are you drunk?");
-      break;
+    switch (day) {
+      case 1:
+        document.write("Su"); // "1" ===1
+        break;
+      case 2:
+        document.write("Mo");
+        break;
+      case 3:
+        document.write("Tu");
+        break;
+      case 4:
+        document.write("We");
+        break;
+      case 5:
+        document.write("Th");
+        break;
+      case 6:
+        let times = 3;
+        while (times > 0) {
+          document.write("Yeeeey!!! :)");
+          times--;
+        }
+        document.write("Fr");
+        break;
+      case 7:
+        document.write("Sa");
+        break;
+      default:
+        document.write("Are you drunk?");
+        break;
+    }
   }
 
   //switch (day) {   // ===identic
