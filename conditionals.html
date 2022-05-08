@@ -1,0 +1,41 @@
+<script>
+  //1.Write a JavaScript program that accept two integers and display the larger in the console.
+
+  let a = 1;
+  let b = 9;
+  value = prompt("Enter a number 1?");
+  value1 = prompt("Enter a number 2?");
+  if (value1 > value) {
+    console.log(`the number is  ${value1}`);
+  } else if (value > value1) {
+    console.log(`the number is  ${value}`);
+  }
+
+  //2. Write a JavaScript conditional statement to find the sign of product of three numbers. Display the specified sign in the console.
+
+  let c = 3;
+  let d = -7;
+  let e = 2;
+  result = prompt("Enter a number?");
+  if (result < 0) {
+    console.log(`the sign is -`);
+  } else {
+    console.log(`error`);
+  }
+
+  //3. Write a JavaScript conditional statement to sort three numbers. Display the result in the console
+
+  [0, -1, 4].sort((a, b) => b - a);
+
+  //4. Write a JavaScript conditional statement to find the largest of five numbers.Display the result in the console.
+  const num1 = parseFloat(prompt("Enter first number: "));
+  const num2 = parseFloat(prompt("Enter second number: "));
+  const num3 = parseFloat(prompt("Enter third number: "));
+  const num4 = parseFloat(prompt("Enter fourth number: "));
+  const num5 = parseFloat(prompt("Enter fifth number: "));
+
+  const largest = Math.max(num1, num2, num3, num4, num5);
+
+  // display the result
+  console.log("The largest number is " + largest);
+</script>
