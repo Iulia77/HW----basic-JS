@@ -11,34 +11,35 @@
   if (userQuestion) {
     console.log(`The answer is ${randomNumber} `);
   }
-
-  switch (randomNumber) {
+  
+var output = 'Output: ';
+switch (randomNumber) {
     case 8:
-      console.log("It is certain");
+      output += "It is certain";
       break;
     case 7:
-      console.log("It is decidedly so");
+      output += "It is decidedly so";
       break;
     case 6:
-      console.log("Reply hazy try again");
+      output += "Reply hazy try again";
       break;
     case 5:
-      console.log("Cannot predict now");
+      output +="Cannot predict now";
       break;
     case 4:
-      console.log("Do not count on it");
+      output +="Do not count on it";
       break;
     case 3:
-      console.log("My sources say no");
+      output +="My sources say no";
       break;
     case 2:
-      console.log("Outlook not so good");
+      output +="Outlook not so good";
       break;
     case 1:
-      console.log("Signs point to yes");
+      output +="Signs point to yes";
       break;
     default:
-      console.log("Invalid question");
+      output +="Invalid question";
       break;
-  }
+}
 </script>
